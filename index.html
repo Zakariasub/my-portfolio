@@ -28,6 +28,9 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#aboutme">About me</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#portfolio">portfolio</a>
+          </li>
         </ul>
       </div>
 
@@ -44,6 +47,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#aboutme">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#portfolio">portfolio</a>
               </li>
             </ul>
           </div>
@@ -89,12 +95,13 @@
   about me
   ======== -->
 
-      <div id="aboutme" class="bio bg-dark py-5">
+      <div id="aboutme" class="bio bg-dark content-fluid py-5">
         <div class="content row d-flex justify-content-center py-5">
-          <div class="p-5 col-lg-6 colxl-5">
+          <div class="col-lg-6 col-xl-4">
             <img src="asset/images/Bio/I.jpg" class="img-fluid">
           </div>
-          <div class="information px-5 col-lg-6 colxl-5 text-light d-flex flex-column justify-content-center px-5">
+          <div class="d-none d-xl-block col-xl-1"></div>
+          <div class="information col-lg-6 col-xl-4 text-light d-flex flex-column justify-content-center px-5">
             <h1>About me</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                Maiores illo corrupti, fugiat amet consequatur nisi sint 
@@ -128,6 +135,58 @@
           </div>
         </div>
       </div>
+
+      <!-- ========
+      portfolio
+      ======== -->
+
+        <div id="portfolio" class="bg-dark text-light content-fluid py-5">
+          <div class="content row d-flex justify-content-center">
+            <h1 class="display-4 text-center">Portfolio</h1>
+            <div class="selectors col-xl-9 row py-9">
+              <span role="button" class="col text-center" data-bs-target="portfolio-slider" data-bs-slide-to="0">Photography</span>
+              <span role="button" class="col text-center text-secondary" data-bs-target="portfolio-slider" data-bs-slide-to="1">Robotics</span>
+            </div>
+            <div id="portfolio-slider" class="col slide col-xl-9" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <div class="row gx-3">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                      <img src="asset/images/portfolio/pic1.jpg" class="img-fluid mx-auto d-block">
+                      <img src="asset/images/portfolio/pic2.jpg" class="img-fluid mx-auto d-block">
+                      <img src="asset/images/portfolio/pic3.jpg" class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                      <img src="asset/images/portfolio/pic4.jpg" class="img-fluid mx-auto d-block">
+                      <img src="asset/images/portfolio/pic5.jpg" class="img-fluid mx-auto d-block">
+                      <img src="asset/images/portfolio/pic6.jpg" class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                      <img src="asset/images/portfolio/pic7.jpg" class="img-fluid mx-auto d-block">
+                      <img src="asset/images/portfolio/pic8.jpg" class="img-fluid mx-auto d-block">
+                      <img src="asset/images/portfolio/pic9.jpg" class="img-fluid mx-auto d-block">
+                    </div>
+                  </div>      
+                </div>
+                <div class="carousel-item active">
+                  <div class="row gx-3">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                      <img src="asset/images/portfolio/pic10.jpg" class="img-fluid mx-auto d-block">
+                      <img src="asset/images/portfolio/pic11.jpg" class="img-fluid mx-auto d-block">
+                      <img src="asset/images/portfolio/pic12.jpg" class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                      <img src="asset/images/portfolio/pic13.jpg" class="img-fluid mx-auto d-block">
+                      <img src="asset/images/portfolio/pic14.jpg" class="img-fluid mx-auto d-block">
+                      <img src="asset/images/portfolio/pic15.jpg" class="img-fluid mx-auto d-block">
+                    </div>
+        
+                  </div>      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
     </main>
 
