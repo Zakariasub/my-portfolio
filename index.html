@@ -1,194 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+        <div class="container text-center">
+            <a class="navbar-brand" href="#">
+                <img src="asset/images/icon/icon.svg" alt="" width="30" height="24">
+            </a>
 
-  <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
-    <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <a class="navbar-brand" href="#">
-        <img src="asset/images/icon/1670915.png" alt="" width="30" height="24">
-      </a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#aboutme">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#writings">Writings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#contectme">Contect</a>
+                    </li>
+                </ul>
+            </div>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#aboutme">About me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#portfolio">portfolio</a>
-          </li>
-        </ul>
-      </div>
-
-        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-          <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel"></h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-
-          <div class="offcanvas-body">
-            <ul class="navbar-nav text-start">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#aboutme">About me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#portfolio">portfolio</a>
-              </li>
-            </ul>
-          </div>
+            <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel"></h5>
+                    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav text-start">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home" data-bs-dismiss="offcanvas">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#aboutme" data-bs-dismiss="offcanvas">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#portfolio" data-bs-dismiss="offcanvas">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#services" data-bs-dismiss="offcanvas">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#resume" data-bs-dismiss="offcanvas">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#writings" data-bs-dismiss="offcanvas">Writings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#contectme" data-bs-dismiss="offcanvas">Contect</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
-    </div>
-  </nav>
-
-  <!-- ========
-  home
-  ======== -->
+    </nav>
 
     <main>
-      <div id="home" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#home" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#home" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active background1 position-relative">
-            <div class="position-absolute top-50 start-50 translate-middle w-100">
-              <h1 class=" display-2 text-uppercase text-light text-center">Hello World</h1>
-              <p class="display-8 text-warning text-center">My first Bootstrap content</p>
-            </div>
-          </div>
-          <div class="carousel-item background2">
-            <div class="position-absolute top-50 start-50 translate-middle w-100">
-              <h1 class=" display-2 text-uppercase text-light text-center">Hello World</h1>
-              <p class="display-8 text-warning text-center">Code + Music</p>
-            </div>
-          </div>
-          <div class="carousel-item background3">
-            <div class="position-absolute top-50 start-50 translate-middle w-100">
-              <h1 class=" display-2 text-uppercase text-light text-center">Hello World</h1>
-              <p class="display-8 text-warning text-center">Gamming is a hobby</p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-  <!-- ========
-  about me
-  ======== -->
+        <!-- ======
+        Home
+        ======= -->
 
-      <div id="aboutme" class="bio bg-dark content-fluid py-5">
-        <div class="content row d-flex justify-content-center py-5">
-          <div class="col-lg-6 col-xl-4">
-            <img src="asset/images/Bio/I.jpg" class="img-fluid">
-          </div>
-          <div class="d-none d-xl-block col-xl-1"></div>
-          <div class="information col-lg-6 col-xl-4 text-light d-flex flex-column justify-content-center px-5">
-            <h1>About me</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-               Maiores illo corrupti, fugiat amet consequatur nisi sint 
-               magni vero laboriosam mollitia, quaerat quia dolore repellat
-                voluptatem eos modi nulla? Aspernatur, repellendus.
-              </p>
-            <div class="skills">
-              <div class="skill">
-                <P class="lead my-2">Design</P>
-                <div class="progress" style="height: 5px;">
-                  <div class="progress-bar progress-bar-animated progress-bar-striped bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="skill">
-                <P class="lead my-2">Programming</P>
-                <div class="progress" style="height: 5px;">
-                  <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="skill">
-                <P class="lead my-2">Gamming</P>
-                <div class="progress" style="height: 5px;">
-                  <div class="progress-bar progress-bar-animated progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
+        <div id="home" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#home" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#home" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="buttons mt-5">
-              <button type="button" class="btn btn-outline-light">Hire Me</button>
-              <button type="button" class="btn btn-outline-light">Download CV</button>
-            </div> 
-          </div>
-        </div>
-      </div>
-
-      <!-- ========
-      portfolio
-      ======== -->
-
-        <div id="portfolio" class="bg-dark text-light content-fluid py-5">
-          <div class="content row d-flex justify-content-center">
-            <h1 class="display-4 text-center">Portfolio</h1>
-            <div class="selectors col-xl-9 row py-9">
-              <span role="button" class="col text-center" data-bs-target="portfolio-slider" data-bs-slide-to="0">Photography</span>
-              <span role="button" class="col text-center text-secondary" data-bs-target="portfolio-slider" data-bs-slide-to="1">Robotics</span>
-            </div>
-            <div id="portfolio-slider" class="col slide col-xl-9" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item">
-                  <div class="row gx-3">
-                    <div class="col-12 col-sm-6 col-lg-4">
-                      <img src="asset/images/portfolio/pic1.jpg" class="img-fluid mx-auto d-block">
-                      <img src="asset/images/portfolio/pic2.jpg" class="img-fluid mx-auto d-block">
-                      <img src="asset/images/portfolio/pic3.jpg" class="img-fluid mx-auto d-block">
+            <div class="carousel-inner">
+                <div class="carousel-item active background1 position-relative">
+                    <div class="position-absolute top-50 start-50 translate-middle w-100">
+                        <h1 class="display-2 text-uppercase text-light text-center">hellow world</h1>
+                        <p class="display-5 text-center text-warning">My portfolio</p>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
-                      <img src="asset/images/portfolio/pic4.jpg" class="img-fluid mx-auto d-block">
-                      <img src="asset/images/portfolio/pic5.jpg" class="img-fluid mx-auto d-block">
-                      <img src="asset/images/portfolio/pic6.jpg" class="img-fluid mx-auto d-block">
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
-                      <img src="asset/images/portfolio/pic7.jpg" class="img-fluid mx-auto d-block">
-                      <img src="asset/images/portfolio/pic8.jpg" class="img-fluid mx-auto d-block">
-                      <img src="asset/images/portfolio/pic9.jpg" class="img-fluid mx-auto d-block">
-                    </div>
-                  </div>      
                 </div>
-                <div class="carousel-item active">
-                  <div class="row gx-3">
-                    <div class="col-12 col-sm-6 col-lg-4">
-                      <img src="asset/images/portfolio/pic10.jpg" class="img-fluid mx-auto d-block">
-                      <img src="asset/images/portfolio/pic11.jpg" class="img-fluid mx-auto d-block">
-                      <img src="asset/images/portfolio/pic12.jpg" class="img-fluid mx-auto d-block">
+                <div class="carousel-item background2 position-relative">
+                    <div class="position-absolute top-50 start-50 translate-middle w-100">
+                        <h1 class="display-2 text-uppercase text-light text-center">hellow world</h1>
+                        <p class="display-5 text-center text-warning">Code + Music</p>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
-                      <img src="asset/images/portfolio/pic13.jpg" class="img-fluid mx-auto d-block">
-                      <img src="asset/images/portfolio/pic14.jpg" class="img-fluid mx-auto d-block">
-                      <img src="asset/images/portfolio/pic15.jpg" class="img-fluid mx-auto d-block">
-                    </div>
-        
-                  </div>      
                 </div>
-              </div>
+                <div class="carousel-item background3 position-relative">
+                    <div class="position-absolute top-50 start-50 translate-middle w-100">
+                        <h1 class="display-2 text-uppercase text-light text-center">hellow world</h1>
+                        <p class="display-5 text-center text-warning">Gamming</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
 
+        <!-- ======
+        aboutme
+        ======= -->
+
+        <div id="aboutme" class="bg-dark container-fluid py-5">
+            <div class="content row d-flex justify-content-center py-5">
+                <div class="col-lg-6 col-xl-4">
+                    <img src="asset/images/Bio/I.jpg" class="img-fluid">
+                </div>
+                <div class="d-none d-xl-block col-xl-1">
+
+                </div>
+                <div class="information col-lg-6 col-xl-4 text-light d-flex flex-column justify-content-center">
+                    <div class="aboutme">
+                        <h1 class="display-4">My Bio</h1>
+                        <p class="lead text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In corrupti facere unde adipisci molestiae perspiciatis quidem repellat libero eligendi tempore, temporibus voluptatem hic laudantium reiciendis mollitia, repellendus rerum rem iusto?</p>
+                    </div>
+                    <div class="skills">
+                        <div class="skill">
+                            <p class="lead my-2">Design</p>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar progress-bar-animated progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p class="lead my-2">Programming</p>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar progress-bar-animated progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p class="lead my-2">Gamming</p>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons mt-5">
+                        <button type="button" class="btn btn-primary">Hire Me</button>
+                        <button type="button" class="btn btn-secondary">Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =======
+        portfolio
+        ========= -->
+
+        <div id="portfolio" class="bg-dark text-light container-fluid py-5">
+            <div class="content row d-flex justify-content-center">
+                <h1 class="display-4 text-center">Portfolio</h1>
+                <div class="selectors col-lg-9 col-xl-6 row py-3">
+                    <span role="button" class="col text-center" data-bs-target="#portfolio-slider" data-bs-slide-to="0">Photography</span>
+                    <span role="button" class="col text-center text-secondary" data-bs-target="#portfolio-slider" data-bs-slide-to="1">Robotics</span>
+                </div>
+                
+                <div id="portfolio-slider" class="carousel slide col-xl-9" data-bs-ride="carousel" data-bs-interval="false">
+                    
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row gx-3">
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <img src="asset/images/portfolio/pic1.jpg" class="img-fluid mx-auto d-block">
+                                    <img src="asset/images/portfolio/pic2.jpg" class="img-fluid mx-auto d-block">
+                                    <img src="asset/images/portfolio/pic3.jpg" class="img-fluid mx-auto d-block">
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <img src="asset/images/portfolio/pic4.jpg" class="img-fluid mx-auto d-block">
+                                    <img src="asset/images/portfolio/pic5.jpg" class="img-fluid mx-auto d-block">
+                                    <img src="asset/images/portfolio/pic6.jpg" class="img-fluid mx-auto d-block">
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <img src="asset/images/portfolio/pic7.jpg" class="img-fluid mx-auto d-block">
+                                    <img src="asset/images/portfolio/pic8.jpg" class="img-fluid mx-auto d-block">
+                                    <img src="asset/images/portfolio/pic9.jpg" class="img-fluid mx-auto d-block">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row gx-3">
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <img src="asset/images/portfolio/pic10.jpg" class="img-fluid mx-auto d-block">
+                                    <img src="asset/images/portfolio/pic11.jpg" class="img-fluid mx-auto d-block">
+                                    <img src="asset/images/portfolio/pic12.jpg" class="img-fluid mx-auto d-block">
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <img src="asset/images/portfolio/pic13.jpg" class="img-fluid mx-auto d-block">
+                                    <img src="asset/images/portfolio/pic14.jpg" class="img-fluid mx-auto d-block">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =======
+        Services
+        ========= -->
+
+        <div id="services" class="bg-dark text-light container-fluid py-5">
+            <div class="content row d-flex justify-content-center">
+                <h1 class="display-4 text-center">Services</h1>
+      
+                <div class="row col-xl-9 g-3">
+                    <div class="text-center col-sm-6 col-md-4">
+                        <div class="border border-secondary rounded p-2">
+                            <img src="asset/images/services/icon2.svg" height="auto" width="48px" class="d-block mx-auto">
+                            <h1 class="my-4 display-6">Development</h1>
+                            <p class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="text-center col-sm-6 col-md-4">
+                        <div class="border border-secondary rounded p-2">
+                            <img src="asset/images/services/icon3.svg" height="auto" width="48px" class="d-block mx-auto">
+                            <h1 class="my-4 display-6">Griphics Design</h1>
+                            <p class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="text-center col-sm-6 col-md-4">
+                        <div class="border border-secondary rounded p-2">
+                            <img src="asset/images/services/icon4.svg" height="auto" width="48px" class="d-block mx-auto">
+                            <h1 class="my-4 display-6">Robotics</h1>
+                            <p class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                    </div>   
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- ======
+        Resume
+        ======= -->
+
+        <div id="resume" class="bg-dark text-light container-fluid py-5">
+            <div class="content row d-flex justify-content-center">
+                <h1 class="display-4 text-center py-5">Resume</h1>
+                <div class="col-lg-4 col-xl-3">
+                    <img src="asset/images/Bio/I.jpg" class="img-fluid">
+                </div>
+                <div class="d-none d-xl-block col-xl-1"> </div>
+                <div class="information col-lg-8 col-xl-5 text-light">
+                    <div class="experiences">
+                        <h1 class="display-6">Work Experience</h1>
+                        <div class="experience mt-2 row border-bottom border-secondary">
+                            <div class="col-12 col-md-8">
+                                <h5 class="fw-light">Software Engineer</h5>
+                                <div class="row text-secondary">
+                                    <p class="col-sm-8"><i class="bi-alarm"></i>Shohoz</p>
+                                    <p class="col-sm-4"><i class="bi bi-geo-alt"></i>Dhaka</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p class="text-md-end">
+                                    <span class="badge rounded-pill bg-secondary">
+                                        <span class="h5 fw-light px-5">Full time</span>
+                                    </span>
+                                </p>
+                                <p class="text-md-end text-secondary"><i class="bi bi-calender"></i>Dec-2020 - present</p>
+                            </div>
+                        </div>
+                        <div class="experience mt-2 row border-bottom border-secondary">
+                            <div class="col-12 col-md-8">
+                                <h5 class="fw-light">Software Engineer</h5>
+                                <div class="row text-secondary">
+                                    <p class="col-sm-8"><i class="bi-alarm"></i>Shohoz</p>
+                                    <p class="col-sm-4"><i class="bi bi-geo-alt"></i>Dhaka</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p class="text-md-end">
+                                    <span class="badge rounded-pill bg-secondary">
+                                        <span class="h5 fw-light px-5">Full time</span>
+                                    </span>
+                                </p>
+                                <p class="text-md-end text-secondary"><i class="bi bi-calender"></i>Dec-2020 - present</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======
+        Writings
+        ======= -->
+
+        <div id="writings" class="bg-dark text-light container-fluid py-5">
+            <div class="content row d-flex justify-content-center">
+                <h1 class="display-4 text-center py-5">Writings</h1>
+                
+                <div class="information col-xl-9 text-light">
+                    <div class="writings">
+                        <a class="writing text-decoration-none row border-bottom border-secondary py-4" href="#home">
+                            <div class="col-12 col-md-8">
+                                <p class="text-secondary"><i class="bi bi-calender"></i>Dec-2020 - present</p>
+                                <h3 class="fw-light text-light">Front-end Developer</h3>
+                            </div>
+                            <div class="col-12 col-md-4">
+                               <p class="text-md-end text-secondary text-uppercase">2 min read</p>
+                            </div>
+                        </a>
+                        <a class="writing text-decoration-none row border-bottom border-secondary py-4" href="#aboutme">
+                            <div class="col-12 col-md-8">
+                                <p class="text-secondary"><i class="bi bi-calender"></i>Dec-2020 - present</p>
+                                <h3 class="fw-light text-light">Used React JS</h3>
+                            </div>
+                            <div class="col-12 col-md-4">
+                               <p class="text-md-end text-secondary text-uppercase">2 min read</p>
+                            </div>
+                        </a>
+                        <a class="writing text-decoration-none row border-bottom border-secondary py-4" href="#writings">
+                            <div class="col-12 col-md-8">
+                                <p class="text-secondary"><i class="bi bi-calender"></i>Dec-2020 - present</p>
+                                <h3 class="fw-light text-light">Why Front-end developer are importent</h3>
+                            </div>
+                            <div class="col-12 col-md-4">
+                               <p class="text-md-end text-secondary text-uppercase">2 min read</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======
+        Contect Me
+        ======= -->
+
+        <div id="contectme" class="bg-dark text-light container-fluid py-5">
+            <div class="content row d-flex justify-content-center">
+                <h1 class="display-4 text-center">Get in touch</h1>
+                <p class="text-center">Do you have a nice software idea, wanna hire a top notch frontend develop or wanna be friend ?<br>let's get contected</p>
+                <div class="row g-2 text-center d-flex justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="border border-secondary rounded py-4">
+                            <img 
+                                src="asset/images/services/icon2.svg"
+                                height="64px"
+                                width="auto"
+                                class="d-block mx-auto my-2">
+                        
+                            <h1 class="my-2 display-6">Direct Contact</h1>
+                            <a href="tel://017-xxx-xxxx" class="my-4 text decoration-none text-info d-block">
+                                <i class="bi bi-phone"></i> 017-xxx-xxxx</a>
+                            <a href="mailto:contect@gmail.com" class="my-4 text decoration-none text-info d-block">
+                                <i class="bi bi-envelope"></i>
+                                contect@gmail.com
+                            </a>
+                            <a href="" class="my-4 text decoration-none text-info d-block">
+                                <i class="bi bi-envelope"></i>
+                                contect@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="border border-secondary rounded py-4 h-100">
+                            <img 
+                                src="asset/images/services/icon3.svg"
+                                height="64px"
+                                width="auto"
+                                class="d-block mx-auto my-2">            
+                            <h1 class="my-2 display-6">Social Media</h1>
+
+                            <div class="social-medias row g-2">
+                                <a href="https://bd.linkedin.com/" terget="_blank" class="text-decoration-none col">
+                                    <img src="asset/images/media/icons8-discord-48.png" width="48px" height="auto">
+                                </a>
+                                <a href="https://bd.linkedin.com/" terget="_blank" class="text-decoration-none col">
+                                    <img src="asset/images/media/icons8-facebook-48.png" width="48px" height="auto">
+                                </a>
+                                <a href="https://bd.linkedin.com/" terget="_blank" class="text-decoration-none col">
+                                    <img src="asset/images/media/icons8-linkedin-48.png" width="48px" height="auto">
+                                </a>
+                                <a href="https://bd.linkedin.com/" terget="_blank" class="text-decoration-none col">
+                                    <img src="asset/images/media/icons8-twitter-48.png" width="48px" height="auto">
+                                </a>
+                            </div>
+
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <footer class="bg-secondary">
+        <div class="py-5">
+            <p class="h5 fw-light text-center">Made with <span>&#10084;</span> by Md. Zakaria Hossain</p>
+        </div>
+    </footer>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
